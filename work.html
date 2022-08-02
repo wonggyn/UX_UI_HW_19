@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
         <meta charset="UTF-8">
@@ -15,12 +16,14 @@
         <header>
             <div class="nav-container test logo">
                 <div class="n1">
-                <img class="egglogo" src="images/Potential Logo.png" alt="egg with initials NW" >
-                <p class="test spacing itemnav">ABOUT</p>
-                <p class="test spacing itemnav">RESUME</p>
-                <p class="test spacing itemnav">WORK</p></div>
-                <div class="n2"><p class="test spacing itemnav">BEHANCE</p>
-                <p class="test spacing itemnav">LINKEDIN</p></div>
+                    <a class="egglogo" href="index.html">
+                        <img src="images/Potential Logo.png" alt="egg with initials NW">
+                    </a>
+                <p class="test spacing itemnav hover">ABOUT</p>
+                <p class="test spacing itemnav hover">RESUME</p>
+                <p class="test spacing itemnav blue">WORK</p></div>
+                <div class="n2"><p class="test spacing itemnav hover">BEHANCE</p>
+                <p class="test spacing itemnav hover">LINKEDIN</p></div>
         </div>
         </header>
         <br>
@@ -58,11 +61,12 @@
     <footer>
         <div class="foot">
         <div class="pitem5">Want to work together? Let's connect! </div>
-        <div class="pitem6">You can send me an email or chat me on LinkedIn.</div>
+        <div class="pitem6">You can send me an <a class= "hover">email</a> or chat me on <a class= "hover">LinkedIn</a>.</div>
         <br>
         <img class="pitem7" src="images\Linkedin Icon.png" alt="LinkedIn icon">
         <img class="pitem8" src="images\Behance_logo 1.png" alt="Behance icon">
         </div>
     </footer>
     </body>
+    <script src="js\index.js"></script>
 </html>

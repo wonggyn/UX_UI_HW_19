@@ -49,16 +49,15 @@ a {
 
 .n1 {
     display: flex;
-    padding: 0% 12.5%;
+    padding: 0% 16.6%;
 }
 
 .n2 {
     display: flex;
-    padding-left: 32.5%;
+    padding-left: 23.5%;
 }
 
 .egglogo {
-    padding-left: 15%;
     grid-area: log;
     align-self: center;
     margin: 0;
@@ -73,8 +72,6 @@ a {
 .logo {
     min-width: 900px;
     padding-top: 36px;
-    padding-left: 72px;
-    padding-bottom: 36px;
 }
 
 .logo img {
@@ -93,10 +90,10 @@ a {
 }
 
 .h1 {
-    font-family: "Raleway", Helvetica, sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: #4E4D4D;
+    font-family: SF Pro Display, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 900;   
+    color: #6d6d6d;
 }
 
 .h2 {
@@ -117,10 +114,10 @@ a {
 }
 
 .introcontainer { 
-    padding: 2.5% 432px;
+    padding: 2% 432px;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 25% 5% 15% 10% 35%;
+    grid-template-rows: 25% 10% 20% 10% 35%;
     grid-template-areas: 
     "intropic ."
     "intropic introname"
@@ -417,4 +414,3 @@ a {
     }
 
     } 
-

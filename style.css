@@ -1,0 +1,395 @@
+/*use percentages for responsive design, and you can include max-width ass pixels*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+  
+header {
+    margin: 0;
+}
+
+.test {
+    display: inline-block;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 24px;
+    color: #4E4D4D;
+}
+
+.nav-container {
+    min-width: 820px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.itemnav {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: inline-block;
+}
+
+.n1 {
+    display: flex;
+    padding: 0% 12.5%;
+}
+
+.n2 {
+    display: flex;
+    padding-left: 32.5%;
+}
+
+.egglogo {
+    padding-left: 15%;
+    grid-area: log;
+    align-self: center;
+}
+
+.spacing {
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    min-width: 900px;
+    padding-top: 36px;
+    padding-left: 72px;
+    padding-bottom: 36px;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.ptext {
+    font-family: SF Pro Display, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #4E4D4D;
+}
+
+.btext {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.h1 {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #4E4D4D;
+}
+
+.h2 {
+    font-family: SF Pro Display, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4E4D4D;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.Introname {
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #4E4D4D;
+}
+
+.introcontainer { 
+    padding: 2.5% 432px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 25% 5% 15% 10% 35%;
+    grid-template-areas: 
+    "intropic ."
+    "intropic introname"
+    "intropic introtext"
+    "intropic introdesc"
+    "intropic .";
+}
+
+.itema {
+    grid-area: intropic;
+}
+
+.itemb {
+    grid-area: introname;
+}
+.itemc {
+    grid-area: introtext;
+}
+.itemd {
+    grid-area: introdesc;
+}
+    
+.container {
+    padding: 2.5% 432px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 30% 10% 60%;
+    column-gap: 6%;
+    grid-template-areas: 
+    "skillsettitle . ."
+    "skillstitle1 skillstitle2 skillstitle3"
+    "skills1 skills2 skills3";
+    background-color: #BBEED9;
+}
+
+.item1 {
+    grid-area: skillsettitle;
+}
+
+.item2 {
+    grid-area: skillstitle1;
+    font-weight: bold;
+}
+
+.item3 {
+    grid-area: skills1;
+}
+
+.item4 {
+    grid-area: skillstitle2;
+    font-weight: bold;
+}
+
+.item5 {
+    grid-area: skills2;
+}
+
+.item6 {
+    grid-area: skillstitle3;
+    font-weight: bold;
+}
+
+.item7 {
+    grid-area: skills3
+}
+
+.pitem1 {
+    grid-area: picture;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.pitem2 {
+    grid-area: projecttitle;
+}
+
+.pitem3 {
+    grid-area: projectdesc;
+}
+
+.pitem4 {
+    grid-area: clickbutton;
+    background-color: #BBEED9;
+    border: none;
+    color: #4E4D4D;
+    padding: 0px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    width: 180px;
+    height: 36px;
+}
+
+.pitem5 {
+    grid-area: question;
+    font-family: "Raleway", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #FEFEFE;
+}
+
+.pitem6 {
+    grid-area: emailchat;
+    font-family: SF Pro Display, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #FEFEFE;
+}
+
+.pitem7 {
+    grid-area: licon;
+    padding-left: 60%;
+    padding-right: 10%;
+}
+
+.pitem8 {
+    grid-area: bicon;
+    padding-left: 50%;
+}
+
+.container2 {
+    padding: 2.5% 432px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 25% 15% 15% 15% 30%;
+    grid-template-areas: 
+    "picture ."
+    "picture projecttitle"
+    "picture projectdesc"
+    "picture clickbutton"
+    "picture .";
+}
+
+.container3 {
+    padding: 2.5% 432px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 25% 15% 15% 8% 37%;
+    grid-template-areas: 
+    ". picture"
+    "projecttitle picture"
+    "projectdesc picture"
+    ". picture"
+    "clickbutton picture";
+}
+
+.foot {
+    padding: 5% 432px;
+    display: grid;
+    grid-template-columns: 40% 40% 5% 5% 10%;
+    grid-template-rows: 10% 40% 40% 10%;
+    grid-template-areas:
+    ". . . . ."
+    "question . licon bicon ."
+    "emailchat . . . ."
+    ". . . . .";
+    background-color: #A0A0A0;
+    color: #FEFEFE;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-container {
+        min-width: 320px;
+        width: auto;
+        flex-direction: column;
+        padding: 0% 89.5%;
+    }
+    .introcontainer {
+        text-align: center;
+        min-width: 320px;
+        width: auto;
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 5% 5% 10% 35% 5%;
+        grid-template-areas: 
+        "intropic"
+        "."
+        "introname"
+        "introtext"
+        "introdesc"
+        ".";
+    }
+
+    .container {
+        text-align: center;
+        min-width: 320px;
+        width: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 5% 20% 5% 15% 5% 3%;
+        grid-template-areas: 
+        "."
+        "skillsettitle"
+        "skillstitle1"
+        "skills1" 
+        "skillstitle2" 
+        "skills2"
+        "skillstitle3"
+        "skills3";
+        background-color: #BBEED9;
+    }
+
+    .container2 {
+        text-align: center;
+        min-width: 320px;
+        width: auto;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 30% 5% 25% 10%;
+        grid-template-areas: 
+        "."
+        "picture"
+        "projecttitle"
+        "projectdesc"
+        "clickbutton"
+        ".";
+    }
+
+    .pitem1 {
+        /*padding-left: 8%;*/
+        grid-area: picture;
+        width: auto;
+        height: auto;
+        min-width: 270px;
+        min-height: 200px;
+        object-fit: contain;
+        padding-left: 8%;
+    }
+    
+    .pitem4 {
+        margin-left: 22%;
+        grid-area: clickbutton;
+        background-color: #BBEED9;
+        border: none;
+        color: #4E4D4D;
+        padding: 0px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 10px;
+        width: 180px;
+        height: 36px;
+    }
+
+    .container3 {
+        text-align: center;
+        min-width: 320px;
+        width: auto;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 15% 25% 10%;
+        grid-template-areas: 
+        "picture"
+        "projecttitle"
+        "projectdesc"
+        "clickbutton"
+        ".";
+    }
+    .foot {
+        text-align: center;
+        min-width: 320px;
+        min-height:280px;
+        width: auto;
+        height: auto;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 30% 30% 40%;
+        grid-template-rows: 50% 35% 15% 0%;
+        grid-template-areas:
+        "question question question"
+        "emailchat emailchat emailchat"
+        "licon bicon ."
+        ". . .";
+        background-color: #A0A0A0;
+        color: #FEFEFE;
+    }
+
+    .pitem7 {
+        grid-area: licon;
+    }
+    
+    .pitem8 {
+        grid-area: bicon;
+    }
+
+    } 
+
